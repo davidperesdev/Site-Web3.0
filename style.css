@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: rgba(1, 1, 22, 0.993);
+}
+
+/*      ----- Menus da página ----- */
+nav#menu {
+    display: block;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5px;
+    margin-right: 25px;
+}
+
+nav#menu li {
+    display: inline-block;
+    color: white;
+    margin: 8px;
+    padding: 8px;
+    transition: color 1s;
+}
+
+nav#menu li:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+/*      ----- Configuração do primeiro bloco ----- */
+.bloco1 {
+    position: relative; 
+    width: 100%;
+    height: 700px; 
+}
+
+.bloco1::before {
+    position: absolute;
+    content: "";
+    background-image: url(Bloco01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;  
+    opacity: 0.950;
+  /*  top: 0;  
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    z-index: -2;
+}
+
+.texto1 {
+    max-width: 500px;
+    color: white;
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+h1 {
+    padding-top: 180px;
+}
+
+/*      ----- Configuração do segundo bloco ----- */
+.bloco2 {
+    background-color: #131313;
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem2{
+  width: 100%;
+  max-width: 700px;
+}
+
+/*      ----- Configuração do terceiro bloco ----- */
+.bloco3 {
+    background-color: rgba(1, 1, 22, 0.993);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.bloco3 .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    /* gap: 32px; /* Espaçamento entre os elementos (blocos) */
+    
+}
+
+.card3 img {
+    width: 100%;
+    max-width: 300px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.card3 {
+    border-radius: 4px;
+    background-color: white;
+}
+
+.texto3 {
+    padding: 16px;
+}
+
+.texto3 h2 {
+    padding-bottom: 8px;
+}
+
+.texto3 ul {
+    padding-left: 16px;
+}
+
+/*      ----- Configuração do quartp bloco ----- */
+
+.bloco4 {
+    background-color: rgba(1, 1, 22, 0.993);
+}
+
+.bloco4 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 100px 0px;
+    
+}
+
+.texto4 {
+    display: flex;
+    flex-direction: column; /* para que o display flex fique em formato horizontal */
+    width: 50%;
+    justify-content: center; /* Como "girou" o display flex, os eixos X e Y também giraram */
+}
+
+.texto4 h2 {
+    padding-bottom: 8px;
+    color: white;
+}
+
+.texto4 p {
+    color: white;
+    padding-bottom: 16px;
+}
+
+.bloco4 .container img {
+    width: 50%;
+}
+
+.texto4 a {
+    max-width: max-content;
+    font-weight: bold;
+    transition: 1s ease;
+    color: white;
+}
+
+.texto4 a:hover {
+    cursor: pointer;
+}
+
+.imagemGPT {
+    width: 100%;
+    max-width: 300px; 
+}
